@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:stretchColumns="1,2,3">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/nomeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nome_relative_layout"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/nomeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow>
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email_relative_layout"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_span="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/telefoneTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/telefone_relative_layout"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/telefoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:inputType="phone" />
+    </TableRow>
+
+    <TableRow>
+        <CheckBox
+            android:id="@+id/notificacoesCheckBox"
+            android:layout_width="0dp"
+            android:layout_span="2"
+            android:layout_height="wrap_content"
+            android:text="@string/receber_notifica_es" />
+
+        <RadioGroup
+            android:id="@+id/notificacoesRadioGroup"
+            android:layout_width="0dp"
+            android:layout_span="2"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/emailRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+
+            <RadioButton
+                android:id="@+id/telefoneRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefone" />
+
+        </RadioGroup>
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/limparButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/limpar_relative_layout"
+            android:layout_span="2"
+            android:onClick="limparFormulario" />
+
+        <Button
+            android:id="@+id/salvarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="@string/salvar_relative_layout"/>
+
+    </TableRow>
+
+</TableLayout>

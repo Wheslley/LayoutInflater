@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">layouts</string>
+    <string name="nome_relative_layout">Nome</string>
+    <string name="email_relative_layout">Email</string>
+    <string name="telefone_relative_layout">Telefone</string>
+    <string name="receber_notifica_es">Receber Notificações</string>
+    <string name="limpar_relative_layout">Limpar</string>
+    <string name="salvar_relative_layout">Salvar</string>
+    <string name="telefoneNovoLayout">Telefone</string>
+    <string name="emailNovoLayout">Email</string>
+
+    <string-array name="tipoTelefone">
+        <item>Fixo</item>
+        <item>Celular</item>
+    </string-array>
+
+</resources>

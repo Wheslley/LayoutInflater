@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/nomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/nome_relative_layout"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/nomeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nomeTextView"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nomeEditText"
+        android:text="@string/email_relative_layout"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTextView"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/telefoneTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:text="@string/telefone_relative_layout"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/telefoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telefoneTextView"
+        android:inputType="phone" />
+
+    <CheckBox
+        android:id="@+id/notificacoesCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telefoneEditText"
+        android:text="@string/receber_notifica_es" />
+
+    <RadioGroup
+        android:id="@+id/notificacoesRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificacoesCheckBox"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/emailRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+
+        <RadioButton
+            android:id="@+id/telefoneRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefone" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/limparButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limpar_relative_layout"
+        android:onClick="limparFormulario"
+        android:layout_below="@id/notificacoesRadioGroup" />
+
+    <Button
+        android:id="@+id/salvarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar_relative_layout"
+        android:layout_below="@id/notificacoesRadioGroup"
+        android:layout_toRightOf="@id/limparButton"/>
+
+</RelativeLayout>
