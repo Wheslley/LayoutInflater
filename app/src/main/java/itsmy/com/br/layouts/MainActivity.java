@@ -92,6 +92,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             this.modificacoesCheckBox.setChecked(false);
             if (this.modificacoesCheckBox.isChecked()) this.modificacoesRadioGroup.setVisibility(View.VISIBLE);
             else this.modificacoesRadioGroup.setVisibility(View.GONE);
+            this.telefoneLinearLayout.removeAllViews();
+            this.emailLinearLayout.removeAllViews();
             this.nome.requestFocus();
         }
     }
